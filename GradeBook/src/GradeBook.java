@@ -17,7 +17,7 @@ public class GradeBook {
   }
 
   // method to set the course name
-  public void setCourseName(String courseName) {
+  private void setCourseName(String courseName) {
     this.courseName = courseName;
   }
 
@@ -40,7 +40,7 @@ public class GradeBook {
   }
 
   // find minimum grade
-  public int getMinimum() {
+  private int getMinimum() {
     // assume first element of grades array is smallest
     int lowGrade = grades[0][0];
 
@@ -58,7 +58,7 @@ public class GradeBook {
   }
 
   // find maximum grade
-  public int getMaximum() {
+  private int getMaximum() {
     // assume first element of grades array is largest
     int highGrade = grades[0][0];
 
@@ -76,7 +76,7 @@ public class GradeBook {
   }
 
   // determine average grade for particular set of grades
-  public double getAverage(int[] setOfGrades) {
+  private double getAverage(int[] setOfGrades) {
     int total = 0;
     // sum grades for one student
     for (int grade : setOfGrades)
@@ -86,7 +86,7 @@ public class GradeBook {
   }
 
   // output bar chart displaying overall grade distribution
-  public void outputBarChart() {
+  private void outputBarChart() {
     System.out.println("Overall grade distribution:");
 
     // stores frequency of grades in each range of 10 grades
@@ -115,7 +115,7 @@ public class GradeBook {
   }
 
   // output the contents of the grades array
-  public void outputGrades() {
+  private void outputGrades() {
     System.out.printf("The grades are:%n%n");
     System.out.print("Student "); // align column heads
 
